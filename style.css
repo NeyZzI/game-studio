@@ -1,0 +1,62 @@
+
+h1 {
+    color: skyblue;
+}
+
+/* ?Хто? ( 
+  Що?: як?;
+    )/*
+
+/* !селектори тега (елемента) */
+header {
+    /* !властивість значення */
+    background-color: cornflowerblue;
+    padding: 50px 0;
+}
+
+section {
+    background-color: cadetblue;
+}
+/* !сектори класу */
+.first-section {
+    background-color: coral;
+}
+
+/* !селектор індефікатора */
+#main {
+    background-color: white;
+}
+
+/* !дочірні селектори */
+header p {
+    text-transform: uppercase;
+}
+
+header div p {
+     color: yellow;
+}
+
+header > p {
+    color: red;
+}
+
+header, main, footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* !сусідній селектор */
+hr + article {
+
+}
+
+/* !споріднений селектор */
+article ~ hr {
+    height: 6px;
+    background-color: #333;
+}
+
+/* !селектор атрибута */
+a[href^-tel] {
+    background-color: yellow;
+}
