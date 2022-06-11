@@ -1,62 +1,74 @@
+/* Хто? {
+    властивість: значення;
+    що?: як?;
+} */
 
-h1 {
-    color: skyblue;
-}
 
-/* ?Хто? ( 
-  Що?: як?;
-    )/*
-
-/* !селектори тега (елемента) */
+/* селектори тега (елемента) */
 header {
-    /* !властивість значення */
+    /* властивість: значення; */
     background-color: cornflowerblue;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 section {
     background-color: cadetblue;
 }
-/* !сектори класу */
+
+/* селектори класу */
 .first-section {
     background-color: coral;
 }
 
-/* !селектор індефікатора */
+/* селектор ідентифікатора */
 #main {
-    background-color: white;
+    background-color: #cecece;
 }
 
-/* !дочірні селектори */
+/* дочірні селектори / children selectors */
 header p {
     text-transform: uppercase;
 }
 
 header div p {
-     color: yellow;
+    color: yellow;
 }
 
+.first-section h1 {
+    font-size: 46px;
+}
+
+#main h2 {
+    color: blue;
+}
+
+/* селектор нащадка */
 header > p {
     color: red;
 }
 
+/* групові селектори */
 header, main, footer {
     width: 1200px;
     margin: 0 auto;
 }
 
-/* !сусідній селектор */
+/* сусідній селектор */
 hr + article {
-
+    background-color: mediumslateblue;
 }
 
-/* !споріднений селектор */
+/* споріднений селектор */
 article ~ hr {
     height: 6px;
     background-color: #333;
 }
 
-/* !селектор атрибута */
-a[href^-tel] {
+/* селектор атрибута */
+a[href] {
+    background: green;
+}
+
+a[href^=tel] {
     background-color: yellow;
 }
